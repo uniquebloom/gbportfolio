@@ -4,16 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
+    <title>Gulnaz's Data Science Projects Portfolio</title>
     <style>
-        body {
+        /* Reset CSS */
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
+            box-sizing: border-box;
         }
 
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
         header {
             background-color: #333;
             color: #fff;
@@ -22,10 +32,11 @@
         }
 
         h1 {
-            margin: 0;
             font-size: 24px;
+            margin: 0;
         }
 
+        /* Container */
         .container {
             max-width: 800px;
             margin: auto;
@@ -34,9 +45,9 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            margin-bottom: 20px;
         }
 
+        /* Project */
         .project {
             margin-bottom: 40px;
             border-bottom: 1px solid #ccc;
@@ -44,24 +55,34 @@
         }
 
         .project h2 {
-            margin-top: 0;
             font-size: 20px;
             color: #333;
+            margin-top: 0;
         }
 
         .project p {
-            margin-top: 5px;
             color: #666;
             font-size: 16px;
-            line-height: 1.6;
+            margin-top: 5px;
         }
 
         .project img {
             max-width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 5px;
         }
 
+        .project a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .project a:hover {
+            color: #007bff;
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
             color: #fff;
@@ -82,20 +103,20 @@
 
     <div class="container">
         <div class="project">
-            <h2><a href="https://colab.research.google.com/drive/1sv9-7LbQQngYg8165aU6FLRakMVLmwCo?usp=sharing">Project 1: Evaluating the Efficacy of Machine Learning Models in Time-series Forecasting</a></h2>
-            <img src="graph5.png" alt="Project 1 Image">
-            <p>This research aims to identify the most competent machine learning model for effectively anticipating Bitcoin's future price movements. To address this need comprehensively, the study utilizes three leading machine learning techniques the Support Vector Machine (SVM), the Long Short Term Memory (LSTM) neural network, and the predictive capacities of Facebook's Prophet model.</p>
+            <h2><a href="https://colab.research.google.com/drive/1sv9-7LbQQngYg8165aU6FLRakMVLmwCo?usp=sharing" target="_blank">Project 1: Evaluating the Efficacy of Machine Learning Models in Time-series Forecasting</a></h2>
+            <img src="https://via.placeholder.com/800x400" alt="Project 1 Image">
+            <p>This research aims to identify the most competent machine learning model for effectively anticipating Bitcoin's future price movements. To address this need comprehensively, the study utilizes three leading machine learning techniques: the Support Vector Machine (SVM), the Long Short Term Memory (LSTM) neural network, and the predictive capacities of Facebook's Prophet model.</p>
         </div>
 
         <div class="project">
-            <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis">Project 2: Proportional Species Richness Analysis</a></h2>
-            <img src="figure3.png" alt="Project 2 Image">
+            <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" target="_blank">Project 2: Proportional Species Richness Analysis</a></h2>
+            <img src="https://via.placeholder.com/800x400" alt="Project 2 Image">
             <p>A brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
         <div class="project">
-            <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis">Project 3: Proportional Species Richness Analysis</a></h2>
-            <img src="figure3.png" alt="Project 3 Image">
+            <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" target="_blank">Project 3: Proportional Species Richness Analysis</a></h2>
+            <img src="https://via.placeholder.com/800x400" alt="Project 3 Image">
             <p>A brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </div>
