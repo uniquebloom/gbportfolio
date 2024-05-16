@@ -16,8 +16,8 @@
         /* Global styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #f8f9fa;
+            color: #343a40;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -25,15 +25,16 @@
 
         /* Header */
         header {
-            background-color: #333;
+            background-color: #343a40;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 36px;
             margin: 0;
+            text-transform: uppercase;
         }
 
         /* Container */
@@ -42,26 +43,27 @@
             margin: auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
 
         /* Project */
         .project {
             margin-bottom: 40px;
-            border-bottom: 1px solid #ccc;
             padding-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
         }
 
         .project h2 {
-            font-size: 20px;
-            color: #333;
+            font-size: 24px;
+            color: #343a40;
             margin-top: 0;
+            margin-bottom: 10px;
         }
 
         .project p {
-            color: #666;
+            color: #6c757d;
             font-size: 16px;
             margin-top: 5px;
         }
@@ -71,20 +73,22 @@
             height: auto;
             margin-bottom: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .project a {
             text-decoration: none;
-            color: #333;
+            color: #007bff;
+            transition: color 0.3s ease;
         }
 
         .project a:hover {
-            color: #007bff;
+            color: #0056b3;
         }
 
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -104,20 +108,20 @@
     <div class="container">
         <div class="project">
             <h2><a href="https://colab.research.google.com/drive/1sv9-7LbQQngYg8165aU6FLRakMVLmwCo?usp=sharing" target="_blank">Project 1: Evaluating the Efficacy of Machine Learning Models in Time-series Forecasting</a></h2>
-            <img src="https://via.placeholder.com/800x400" alt="Project 1 Image">
+            <img src="graph5.png" alt="Project 1 Image">
             <p>This research aims to identify the most competent machine learning model for effectively anticipating Bitcoin's future price movements. To address this need comprehensively, the study utilizes three leading machine learning techniques: the Support Vector Machine (SVM), the Long Short Term Memory (LSTM) neural network, and the predictive capacities of Facebook's Prophet model.</p>
         </div>
 
         <div class="project">
             <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" target="_blank">Project 2: Proportional Species Richness Analysis</a></h2>
-            <img src="https://via.placeholder.com/800x400" alt="Project 2 Image">
-            <p>A brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="figure3.png" alt="Project 2 Image">
+            <p>This project undertook a comprehensive analysis of proportional species richness data using R, employing tools such as histograms for data distribution assessment and t-tests for hypothesis testing between periods. Additionally, data preparation involved categorizing columns and introducing new variables, while exploratory data analysis included pairwise correlation analysis to uncover interrelationships among species variables.</p>
         </div>
 
         <div class="project">
             <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" target="_blank">Project 3: Proportional Species Richness Analysis</a></h2>
-            <img src="https://via.placeholder.com/800x400" alt="Project 3 Image">
-            <p>A brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="figure1.png" alt="Project 3 Image">
+            <p>The project aims to distinguish tweets discussing real disasters from those that do not, utilizing fundamental NLP techniques and employing a Term Frequency-Inverse Document Frequency (TF-IDF) approach. A basic random forest model is implemented to conduct tweet classification based on extracted features.</p>
         </div>
     </div>
 
