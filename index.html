@@ -1,134 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulnaz's Data Science Projects Portfolio</title>
-    <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Global styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header */
-        header {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin: 0;
-            text-transform: uppercase;
-        }
-
-        /* Container */
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        /* Project */
-        .project {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        .project h2 {
-            font-size: 24px;
-            color: #343a40;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: #6c757d;
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .project a {
-            text-decoration: none;
-            color: #007bff;
-            transition: color 0.3s ease;
-        }
-
-        .project a:hover {
-            color: #0056b3;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+    <script
+        src="https://kit.fontawesome.com/fa62c117c7.js"
+        crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gulnaz's Data Science Portfolio</title>
 </head>
-
-<body>
-
-    <header>
-        <h1>Gulnaz's Data Science Projects Portfolio</h1>
-    </header>
-
-    <div class="container">
-        <div class="project">
-            <h2><a href="https://colab.research.google.com/drive/1sv9-7LbQQngYg8165aU6FLRakMVLmwCo?usp=sharing" target="_blank">Project 1: Evaluating the Efficacy of Machine Learning Models in Time-series Forecasting</a></h2>
-            <img src="graph5.png" alt="Project 1 Image">
-            <p>This research aims to identify the most competent machine learning model for effectively anticipating Bitcoin's future price movements. To address this need comprehensively, the study utilizes three leading machine learning techniques: the Support Vector Machine (SVM), the Long Short Term Memory (LSTM) neural network, and the predictive capacities of Facebook's Prophet model.</p>
-        </div>
-
-        <div class="project">
-            <h2><a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" target="_blank">Project 2: Proportional Species Richness Analysis</a></h2>
-            <img src="figure3.png" alt="Project 2 Image">
-            <p>This project undertook a comprehensive analysis of proportional species richness data using R, employing tools such as histograms for data distribution assessment and t-tests for hypothesis testing between periods. Additionally, data preparation involved categorizing columns and introducing new variables, while exploratory data analysis included pairwise correlation analysis to uncover interrelationships among species variables.</p>
-        </div>
-
-        <div class="project">
-            <h2><a href="https://colab.research.google.com/drive/1BvYAsA8LCikk8-AGIwrd3xaHbWxZaZsO?usp=sharings" target="_blank">Project 3: Natural Language Processing with Disaster Tweets </a></h2>
-            <img src="figure1.png" alt="Project 3 Image">
-            <p>The project aims to distinguish tweets discussing real disasters from those that do not, utilizing fundamental NLP techniques and employing a Term Frequency-Inverse Document Frequency (TF-IDF) approach. A basic random forest model is implemented to conduct tweet classification based on extracted features.</p>
+<body class="light" id="top">
+<header class="header center">
+    <h3>
+        <a href="https://your-portfolio-link.com" class="link">Gulnaz</a>
+    </h3>
+    <nav class="nav center">
+        <ul class="nav__list center">
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#projects">Projects</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#skills">Skills</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+        <button
+            type="button"
+            aria-label="toggle navigation"
+            class="btn btn--icon nav__hamburger"
+        >
+            <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+<main>
+    <!-- About -->
+    <div class="about center">
+        <h1>Hi, I am <span class="about__name">Gulnaz</span>.</h1>
+        <h2 class="about__role">A Data Scientist.</h2>
+        <p class="about__desc">
+            Welcome to my data science portfolio where I showcase my projects and skills in data analysis, machine learning, and more.
+        </p>
+        <div class="about__contact center">
+            <a href="https://example.com">
+                <span class="btn btn--outline">Resume</span>
+            </a>
+            <a
+                href="https://github.com/your-github-profile"
+                aria-label="github"
+                class="link link--icon"
+            >
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+                href="https://linkedin.com/in/your-linkedin-profile"
+                aria-label="linkedin"
+                class="link link--icon"
+            >
+                <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Data Science Portfolio</p>
-    </footer>
-
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+            <div class="project">
+                <h3>Project 1: Evaluating the Efficacy of Machine Learning Models in Time-series Forecasting</h3>
+                <p class="project__description">
+                    This research aims to identify the most competent machine learning model for effectively anticipating Bitcoin's future price movements. The study utilizes three leading machine learning techniques: the Support Vector Machine (SVM), the Long Short Term Memory (LSTM) neural network, and the predictive capacities of Facebook's Prophet model.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">Python</li>
+                    <li class="project__stack-item">SVM</li>
+                    <li class="project__stack-item">LSTM</li>
+                    <li class="project__stack-item">Prophet</li>
+                </ul>
+                <a
+                    href="https://colab.research.google.com/drive/1sv9-7LbQQngYg8165aU6FLRakMVLmwCo?usp=sharing"
+                    aria-label="live preview"
+                    class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Proportional Species Richness Analysis</h3>
+                <p class="project__description">
+                    This project undertook a comprehensive analysis of proportional species richness data using R, employing tools such as histograms for data distribution assessment and t-tests for hypothesis testing between periods. Additionally, data preparation involved categorizing columns and introducing new variables, while exploratory data analysis included pairwise correlation analysis to uncover interrelationships among species variables.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">R</li>
+                    <li class="project__stack-item">Data Analysis</li>
+                    <li class="project__stack-item">Hypothesis Testing</li>
+                </ul>
+                <a
+                    href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis"
+                    aria-label="live preview"
+                    class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Natural Language Processing with Disaster Tweets</h3>
+                <p class="project__description">
+                    The project aims to distinguish tweets discussing real disasters from those that do not, utilizing fundamental NLP techniques and employing a Term Frequency-Inverse Document Frequency (TF-IDF) approach. A basic random forest model is implemented to conduct tweet classification based on extracted features.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">Python</li>
+                    <li class="project__stack-item">NLP</li>
+                    <li class="project__stack-item">TF-IDF</li>
+                    <li class="project__stack-item">Random Forest</li>
+                </ul>
+                <a
+                    href="https://colab.research.google.com/drive/1BvYAsA8LCikk8-AGIwrd3xaHbWxZaZsO?usp=sharings"
+                    aria-label="live preview"
+                    class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">Python</li>
+            <li class="skills__list-item btn btn--plain">R</li>
+            <li class="skills__list-item btn btn--plain">Machine Learning</li>
+            <li class="skills__list-item btn btn--plain">Data Analysis</li>
+            <li class="skills__list-item btn btn--plain">NLP</li>
+            <li class="skills__list-item btn btn--plain">Time-series Forecasting</li>
+        </ul>
+    </section>
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:your-email@example.com">
+            <span class="btn btn--outline">Email me</span>
+        </a>
+    </section>
+</main>
+<footer class="footer">
+    <a
+        href="https://github.com/your-github-profile"
+        class="link footer__link"
+    >
+        Created By Gulnaz
+    </a>
+</footer>
+<div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
-
 </html>
