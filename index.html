@@ -10,14 +10,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet"
     />
-    <script
-        src="https://kit.fontawesome.com/fa62c117c7.js"
-        crossorigin="anonymous"
-    ></script>
+    <!-- Using the stable Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <link rel="stylesheet" href="styles.css" />
     <title>Gulnaz's Data Science Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMYs0iwA8L2BCL4N6o/hH6DTAhlpD5Wkrdu5p8L" crossorigin="anonymous">
-
 </head>
 <body class="light" id="top">
 <header class="header center">
@@ -75,16 +72,15 @@
                 <i aria-hidden="true" class="fab fa-linkedin"></i>
             </a>
             <a
-        href="https://www.kaggle.com/supernovag"
-        aria-label="kaggle"
-        class="link link--icon"
-    >
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" style="width: 20px; height: 20px;">
-    </a>
+                href="https://www.kaggle.com/supernovag"
+                aria-label="kaggle"
+                class="link link--icon"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" style="width: 20px; height: 20px;">
+            </a>
         </div>
     </div>
     <!-- Projects -->
-       <!-- Projects -->
     <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
         <div class="projects__grid">
@@ -125,7 +121,7 @@
                     <i aria-hidden="true" class="fas fa-external-link-alt"></i>
                 </a>
             </div>
-           <div class="project">
+            <div class="project">
                 <h3>Project 3: Natural Language Processing with Disaster Tweets</h3>
                 <p class="project__description">
                     The project aims to distinguish tweets discussing real disasters from those that do not, utilizing fundamental NLP techniques and employing a Term Frequency-Inverse Document Frequency (TF-IDF) approach. A basic random forest model is implemented to conduct tweet classification based on extracted features.
@@ -144,34 +140,26 @@
                     <i aria-hidden="true" class="fas fa-external-link-alt"></i>
                 </a>
             </div>
-
-        
-        <div class="project">
-            <div class="project__content">
-                <h3>Project 4</h3>
-                <p>Customer Data Analysis in B2B marketplace</p>
-                <a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" class="project__link">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+            <div class="project">
+                <div class="project__content">
+                    <h3>Project 4</h3>
+                    <p>Customer Data Analysis in B2B marketplace</p>
+                    <a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" class="project__link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__content">
+                    <h3>Project 5</h3>
+                    <p>Sephora reviews: Sentiment Analysis</p>
+                    <a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" class="project__link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="project">
-            <div class="project__content">
-                <h3>Project 5</h3>
-                <p>Sephora reviews: Sentiment Analysis</p>
-                <a href="https://www.kaggle.com/code/supernovag/proportional-species-richness-analysis" class="project__link">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-
-        
-
-        
-
-        
-    </div>
-</section>
+    </section>
 
     <!-- Skills -->
     <section class="section skills" id="skills">
@@ -186,6 +174,7 @@
             <li class="skills__list-item btn btn--plain">SQL</li>
         </ul>
     </section>
+
     <!-- Contact -->
     <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
@@ -195,10 +184,7 @@
     </section>
 </main>
 <footer class="footer">
-    <a
-        href="https://github.com/your-github-profile"
-        class="link footer__link"
-    >
+    <a href="https://github.com/your-github-profile" class="link footer__link">
         Created By Gulnaz
     </a>
 </footer>
